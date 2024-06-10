@@ -8,3 +8,5 @@ void main() {
     ),
   );
 }
+
+class FirstClass {}
