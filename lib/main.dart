@@ -9,4 +9,4 @@ void main() {
   );
 }
 
-class FirstClass {}
+class SecondClass {}
