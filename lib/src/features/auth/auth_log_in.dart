@@ -1,5 +1,6 @@
 import 'package:delivery_pizza/src/features/Widgets/primary_button/primary_button.dart';
 import 'package:delivery_pizza/src/features/Widgets/text_button/text_button.dart';
+import 'package:delivery_pizza/src/features/app/app_runner.dart';
 import 'package:delivery_pizza/src/features/auth/auth_sign_up.dart';
 import 'package:flutter/material.dart';
 
@@ -98,7 +99,13 @@ class AuthLogInScreen extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               child: PizzaPrimaryButton(
                 title: 'LOGIN',
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const AppRunner(),
+                    ),
+                  );
+                },
                 colorButton: Colors.white,
                 colorText: const Color(0xffE6361D),
               ),
