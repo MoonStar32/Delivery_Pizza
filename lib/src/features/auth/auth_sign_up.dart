@@ -138,6 +138,8 @@ class AuthSignUpScreen extends StatelessWidget {
               child: PizzaPrimaryButton(
                 title: 'SIGN UP',
                 onTap: () {},
+                colorButton: const Color(0xffE6361D),
+                colorText: Colors.white,
               ),
             ),
             Row(

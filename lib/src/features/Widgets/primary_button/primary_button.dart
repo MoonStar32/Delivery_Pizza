@@ -3,11 +3,17 @@ import 'package:flutter/material.dart';
 class PizzaPrimaryButton extends StatelessWidget {
   final VoidCallback onTap;
   final String title;
+  final IconData? icons;
+  final Color colorButton;
+  final Color colorText;
 
   const PizzaPrimaryButton({
     super.key,
     required this.onTap,
     required this.title,
+    this.icons,
+    required this.colorButton,
+    required this.colorText,
   });
 
   @override
@@ -18,17 +24,30 @@ class PizzaPrimaryButton extends StatelessWidget {
         width: 300,
         height: 60,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: colorButton,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(
-          child: Text(
-            title,
-            style: const TextStyle(
-              color: Color(0xffE6361D),
-              fontWeight: FontWeight.w900,
-              fontSize: 20,
-            ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                icons,
+                color: Colors.white,
+                size: 30,
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Text(
+                title,
+                style: TextStyle(
+                  color: colorText,
+                  fontWeight: FontWeight.w900,
+                  fontSize: 20,
+                ),
+              ),
+            ],
           ),
         ),
       ),
