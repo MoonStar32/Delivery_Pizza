@@ -1,5 +1,6 @@
 import 'package:delivery_pizza/src/features/Widgets/primary_button/primary_button.dart';
 import 'package:delivery_pizza/src/features/Widgets/text_button/text_button.dart';
+import 'package:delivery_pizza/src/features/app/app_runner.dart';
 import 'package:flutter/material.dart';
 
 class AuthSignUpScreen extends StatelessWidget {
@@ -137,7 +138,13 @@ class AuthSignUpScreen extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               child: PizzaPrimaryButton(
                 title: 'SIGN UP',
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const AppRunner(),
+                    ),
+                  );
+                },
                 colorButton: const Color(0xffE6361D),
                 colorText: Colors.white,
               ),

@@ -18,16 +18,6 @@ class _UserScreenState extends State<UserScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              height: 50,
-              decoration: const BoxDecoration(
-                color: Color(0xffE6361D),
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(25),
-                  bottomRight: Radius.circular(25),
-                ),
-              ),
-            ),
             const Text(
               "Account",
               style: TextStyle(
@@ -36,7 +26,7 @@ class _UserScreenState extends State<UserScreen> {
               ),
             ),
             Container(
-              height: 700,
+              height: 650,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -49,6 +39,9 @@ class _UserScreenState extends State<UserScreen> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
+                      const SizedBox(
+                        height: 20,
+                      ),
                       Stack(
                         alignment: AlignmentDirectional.bottomEnd,
                         children: [
