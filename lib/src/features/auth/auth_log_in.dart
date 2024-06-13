@@ -99,6 +99,8 @@ class AuthLogInScreen extends StatelessWidget {
               child: PizzaPrimaryButton(
                 title: 'LOGIN',
                 onTap: () {},
+                colorButton: Colors.white,
+                colorText: const Color(0xffE6361D),
               ),
             ),
             Padding(
@@ -145,6 +147,8 @@ class AuthLogInScreen extends StatelessWidget {
                     ),
                   );
                 },
+                colorButton: Colors.white,
+                colorText: const Color(0xffE6361D),
               ),
             ),
           ],
