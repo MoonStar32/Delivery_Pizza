@@ -5,7 +5,9 @@ import 'package:delivery_pizza/src/features/user/user_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRunner extends StatefulWidget {
-  const AppRunner({super.key});
+  const AppRunner({
+    super.key,
+  });
 
   @override
   State<AppRunner> createState() => _AppRunnerState();

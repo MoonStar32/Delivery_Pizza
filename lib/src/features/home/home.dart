@@ -25,18 +25,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   Text(
                     'Online Pizza',
                     style: TextStyle(
-                        color: Color(0xffE6361D),
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30),
+                      color: Color(0xffE6361D),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(right: 50),
                     child: Text(
                       'Delicious! ',
                       style: TextStyle(
-                          color: Color(0xffE6361D),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25),
+                        color: Color(0xffE6361D),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                      ),
                     ),
                   )
                 ],

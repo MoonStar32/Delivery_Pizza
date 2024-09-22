@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class PizzaScreen extends StatefulWidget {
-  const PizzaScreen({super.key});
+  const PizzaScreen({
+    super.key,
+  });
 
   @override
   State<PizzaScreen> createState() => _PizzaScreenState();
