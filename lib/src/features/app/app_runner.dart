@@ -1,9 +1,13 @@
-import 'package:delivery_pizza/src/features/auth/auth_log_in.dart';
+import 'package:delivery_pizza/src/features/basket/basket.dart';
+import 'package:delivery_pizza/src/features/home/home.dart';
+import 'package:delivery_pizza/src/features/notifications/notifications.dart';
 import 'package:delivery_pizza/src/features/user/user_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRunner extends StatefulWidget {
-  const AppRunner({super.key});
+  const AppRunner({
+    super.key,
+  });
 
   @override
   State<AppRunner> createState() => _AppRunnerState();
@@ -83,8 +87,10 @@ class _AppRunnerState extends State<AppRunner> {
         ],
       ),
       body: const <Widget>[
+        HomeScreen(),
+        NotificationsScreen(),
+        BasketScreen(),
         UserScreen(),
-        AuthLogInScreen(),
       ][currentPageIndex],
     );
   }
